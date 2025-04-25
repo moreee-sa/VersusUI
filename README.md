@@ -16,6 +16,7 @@
   - [✨ Features](#-features)
   - [📸 Screenshot](#-screenshot)
   - [🎨 Includes 4 Color Palettes](#-includes-4-color-palettes)
+- [How to Use](#how-to-use)
   - [✏️ Edit Team/Player Names](#️-edit-teamplayer-names)
   - [⚙️ Control the Score](#️-control-the-score)
   - [🎨 Select Color Palette](#-select-color-palette)
@@ -43,6 +44,9 @@ Customize team names and scores easily! 🎯 Plus, text is resizable for perfect
 Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard, or press 0 to reset to the default. 🖌️🎉
 ![VersusUI Screenshot Overview 1](screenshot/VersusUI-overview_2.png)
 **More palettes coming soon!**
+
+
+# How to Use
 
 
 ## ✏️ Edit Team/Player Names
