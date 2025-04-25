@@ -23,9 +23,9 @@ function App() {
   return (
     <PageWrapper>
       <VersusWrapper>
-        <Team TeamName={"Team A"} position={"L"} />
+        <Team position={"L"} />
         <Counter />
-        <Team TeamName={"Team B"} />
+        <Team />
       </VersusWrapper>
     </PageWrapper>
   )

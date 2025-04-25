@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from "react";
 import styled from "styled-components"
 import '@fontsource-variable/montserrat';
 
@@ -17,27 +18,63 @@ const TeamNameWrapper = styled.div`
   /* Modificare */
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 20px;
   box-sizing: border-box;
   border-radius: ${props => props.$position === "L" ? "12px 0 0 12px" : "0 12px 12px 0"};
   box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.4);
 `;
 
-const TeamNameSpan = styled.span`
-  color: white;
+const HiddenSpan = styled.span`
+  position: absolute;
+  visibility: hidden;
+  white-space: nowrap;
   font-family: 'Montserrat Variable', sans-serif;
-  font-size: 60px;
   font-weight: 700;
+  font-size: 50px;
   text-transform: uppercase;
 `;
 
-function Team({TeamName, position}) {
+const TeamNameInput = styled.input`
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: 'Montserrat Variable', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  font-size: ${props => props.fontSize}px;
+`;
+
+function Team({position}) {
+  const [value, setValue] = useState('');
+  const [fontSize, setFontSize] = useState(50);
+  const spanRef = useRef();
+
+  useEffect(() => {
+    if (spanRef.current) {
+      const maxWidth = 400;
+      const currentWidth = spanRef.current.offsetWidth;
+
+      let newFontSize = 50;
+      if (currentWidth > maxWidth) {
+        newFontSize = Math.max(24, (50 * maxWidth) / currentWidth);
+      }
+      setFontSize(newFontSize);
+    }
+  }, [value]);
+
   return (
     <TeamWrapper>
       <TeamNameWrapper $position={position}>
-        <TeamNameSpan>
-          {TeamName}
-        </TeamNameSpan>
+      <HiddenSpan ref={spanRef}>{value || 'TEAM NAME'}</HiddenSpan>
+      <TeamNameInput
+        maxLength={30}
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        fontSize={fontSize}
+      />
       </TeamNameWrapper>
     </TeamWrapper>
   )
