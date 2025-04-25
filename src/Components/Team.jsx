@@ -48,7 +48,7 @@ const TeamNameInput = styled.input`
 `;
 
 function Team({position}) {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState('Team Name');
   const [fontSize, setFontSize] = useState(50);
   const spanRef = useRef();
 
@@ -68,7 +68,7 @@ function Team({position}) {
   return (
     <TeamWrapper>
       <TeamNameWrapper $position={position}>
-      <HiddenSpan ref={spanRef}>{value || 'TEAM NAME'}</HiddenSpan>
+      <HiddenSpan ref={spanRef}>{value || 'Team Name'}</HiddenSpan>
       <TeamNameInput
         maxLength={30}
         value={value}
@@ -80,4 +80,4 @@ function Team({position}) {
   )
 }
 
-export default Team 
+export default Team
