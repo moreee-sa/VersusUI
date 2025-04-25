@@ -14,7 +14,7 @@
 
 **VersusUI** è un componente overlay React elegante e personalizzabile, pensato per streaming e registrazioni competitive. Ti permette di mostrare i nomi di giocatori o squadre insieme a un contatore del punteggio in tempo reale — perfetto per partite 1v1, tornei o qualsiasi contenuto testa-a-testa.
 
-🔗 [Apri VersusUI]([./public/index.html](https://moreee-sa.github.io/VersusUI/))
+🔗 [Apri VersusUI](https://moreee-sa.github.io/VersusUI/)
 
 - [VersusUI](#versusui)
     - [📜README English](#readme-english)
