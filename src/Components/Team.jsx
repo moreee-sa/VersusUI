@@ -11,7 +11,7 @@ const TeamWrapper = styled.div`
 `;
 
 const TeamNameWrapper = styled.div`
-  background-color: ${props => props.$position === "L" ? "#c1121f" : "#0077b6"};
+  background-color: ${props => props.$color};
   width: 100%;
   height: 100px;
   display: flex;
@@ -47,7 +47,7 @@ const TeamNameInput = styled.input`
   font-size: ${props => props.fontSize}px;
 `;
 
-function Team({position}) {
+function Team({position, currentColors}) {
   const [value, setValue] = useState('Team Name');
   const [fontSize, setFontSize] = useState(50);
   const spanRef = useRef();
@@ -67,7 +67,7 @@ function Team({position}) {
 
   return (
     <TeamWrapper>
-      <TeamNameWrapper $position={position}>
+      <TeamNameWrapper $position={position} $color={currentColors}>
       <HiddenSpan ref={spanRef}>{value || 'Team Name'}</HiddenSpan>
       <TeamNameInput
         maxLength={30}
