@@ -3,7 +3,7 @@
 <p>
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
-  <a href="">
+  <a href="https://moreee-sa.github.io/VersusUI/">
     <img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github%20Pages&logoColor=white" />
   </a>
   <img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" />
@@ -13,6 +13,8 @@
 ### [📜README English](README.md)
 
 **VersusUI** è un componente overlay React elegante e personalizzabile, pensato per streaming e registrazioni competitive. Ti permette di mostrare i nomi di giocatori o squadre insieme a un contatore del punteggio in tempo reale — perfetto per partite 1v1, tornei o qualsiasi contenuto testa-a-testa.
+
+🔗 [Apri VersusUI]([./public/index.html](https://moreee-sa.github.io/VersusUI/))
 
 - [VersusUI](#versusui)
     - [📜README English](#readme-english)
