@@ -1,4 +1,3 @@
-import './App.css'
 import styled from 'styled-components'
 import Team from './Components/Team';
 import Counter from './Components/Counter';
