@@ -10,9 +10,14 @@
   <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
 </p>
 
+
+### [📜README Italiano](README.it.md)
+
+
 **VersusUI** is a sleek and customizable React overlay component designed for competitive streams and recordings. It allows you to display player or team names alongside a live-updating score counter, perfect for 1v1 matches, tournaments, or any head-to-head content.
 
 - [VersusUI](#versusui)
+    - [📜README Italiano](#readme-italiano)
   - [✨ Features](#-features)
   - [📸 Screenshot](#-screenshot)
   - [🎨 Includes 4 Color Palettes](#-includes-4-color-palettes)
@@ -66,7 +71,7 @@ Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard
 
 ##  🖥️ How to Use for OBS
 1. Add as a Browser Source in OBS
-2. **Copy the URL link** of your hosted **VersusUI** component (for example, the link to your React app or web app).
+2. **Copy the URL link** of your hosted **VersusUI** component URL.
 3. In OBS, **add a new source** of type **"Browser"**.
 4. **Paste the URL** you copied into the URL field of the Browser Source.
 5. **Set the resolution** of the source to **1280x200px** to fit the layout properly.
