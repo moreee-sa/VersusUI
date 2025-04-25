@@ -64,7 +64,7 @@ Passa rapidamente tra 4 temi colore integrati usando i tasti da 1 a 4 sulla tast
 
 ## 🖥️ Uso con OBS
 1. Aggiungi come sorgente Browser in OBS
-2. **Copia il link URL** del tuo componente **VersusUI** ospitato URL.
+2. **Copia il link URL** di [VersusUI](https://moreee-sa.github.io/VersusUI/).
 3. In OBS, **aggiungi una nuova sorgente** di tipo **"Browser"**.
 4. **Incolla l’URL** copiato nel campo URL della sorgente Browser.
 5. **Imposta la risoluzione** della sorgente su **1280x200px** per adattarla correttamente al layout.

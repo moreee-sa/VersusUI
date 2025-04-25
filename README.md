@@ -73,7 +73,7 @@ Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard
 
 ##  🖥️ How to Use for OBS
 1. Add as a Browser Source in OBS
-2. **Copy the URL link** of your hosted **VersusUI** component URL.
+2. **Copy the URL link** of [VersusUI](https://moreee-sa.github.io/VersusUI/).
 3. In OBS, **add a new source** of type **"Browser"**.
 4. **Paste the URL** you copied into the URL field of the Browser Source.
 5. **Set the resolution** of the source to **1280x200px** to fit the layout properly.
