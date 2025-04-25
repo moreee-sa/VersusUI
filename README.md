@@ -1,12 +1,19 @@
-# React + Vite
+# VersusUI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**VersusUI** is a sleek and customizable React overlay component designed for competitive streams and recordings. It allows you to display player or team names alongside a live-updating score counter, perfect for 1v1 matches, tournaments, or any head-to-head content.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📺 Clean and responsive UI for OBS or any streaming software
+- 📝 Editable player/team names
+- 🔢 Real-time score counters
+- 🎨 Easy to style and theme
+- ⚛️ Built with React + modern frontend practices
 
-## Expanding the ESLint configuration
+## 🚀 Coming Soon
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Keyboard shortcuts for score control
+
+---
+
+Stay tuned for updates!
