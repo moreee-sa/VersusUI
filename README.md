@@ -12,6 +12,19 @@
 
 **VersusUI** is a sleek and customizable React overlay component designed for competitive streams and recordings. It allows you to display player or team names alongside a live-updating score counter, perfect for 1v1 matches, tournaments, or any head-to-head content.
 
+## 📚 Table of Contents
+
+- [VersusUI](#versusui)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [✨ Features](#-features)
+  - [📸 Screenshot](#-screenshot)
+  - [🎨 Includes 4 Color Palettes](#-includes-4-color-palettes)
+  - [✏️ Edit Team/Player Names](#️-edit-teamplayer-names)
+  - [⚙️ Control the Score](#️-control-the-score)
+  - [🎨 Select Color Palette](#-select-color-palette)
+  - [🖥️ How to Use for OBS](#️-how-to-use-for-obs)
+  - [🚀 Coming Soon](#-coming-soon)
+
 ## ✨ Features
 - 📺 Clean and responsive UI for OBS or any streaming software
 - 📝 Editable player/team names
@@ -19,8 +32,20 @@
 - 🎨 Easy to style and theme
 - ⚛️ Built with React + modern frontend practices
 
+
 ## 📸 Screenshot
-![VersusUI Screenshot Overview](screenshot/VersusUI-overview_0.png)
+![VersusUI Screenshot Overview 0](screenshot/VersusUI-overview_0.png)
+
+The clean, default layout of **VersusUI** – perfect for any competitive stream! 🎮✨
+
+![VersusUI Screenshot Overview 1](screenshot/VersusUI-overview_1.png)
+Customize team names and scores easily! 🎯 Plus, text is resizable for perfect visibility. 🔥
+
+
+## 🎨 Includes 4 Color Palettes
+Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard, or press 0 to reset to the default. 🖌️🎉
+![VersusUI Screenshot Overview 1](screenshot/VersusUI-overview_2.png)
+**More palettes coming soon!**
 
 
 ## ✏️ Edit Team/Player Names
@@ -44,6 +69,8 @@
 3. In OBS, **add a new source** of type **"Browser"**.
 4. **Paste the URL** you copied into the URL field of the Browser Source.
 5. **Set the resolution** of the source to **1280x200px** to fit the layout properly.
+6. To interact with the overlay (e.g., type team names), right-click the Browser Source in OBS and select **"Interact"**. This opens an interactive window where you can type or click as needed. 🖱️⌨️
+
 
 ## 🚀 Coming Soon
 - Keyboard shortcuts for score control
