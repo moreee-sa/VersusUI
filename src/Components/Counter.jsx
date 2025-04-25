@@ -6,6 +6,7 @@ const CounterWrapper = styled.div`
   width: 280px;
   display: flex;
   align-items: center;
+  z-index: 5;
   /* background-color: #1edb3e; */
 `;
 

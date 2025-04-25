@@ -6,10 +6,11 @@ const TeamWrapper = styled.div`
   width: 500px;
   display: flex;
   align-items: center;
+  z-index: 1;
 `;
 
 const TeamNameWrapper = styled.div`
-  background-color: #37718e;
+  background-color: ${props => props.$position === "L" ? "#c1121f" : "#0077b6"};
   width: 100%;
   height: 100px;
   display: flex;
@@ -19,6 +20,7 @@ const TeamNameWrapper = styled.div`
   padding: 25px;
   box-sizing: border-box;
   border-radius: ${props => props.$position === "L" ? "12px 0 0 12px" : "0 12px 12px 0"};
+  box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.4);
 `;
 
 const TeamNameSpan = styled.span`
