@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components"
 import '@fontsource-variable/montserrat';
 
@@ -42,19 +43,24 @@ const CounterNumber = styled.span`
 `;
 
 function Counter() {
+  const [leftScore, setLeftScore] = useState(0);
+  const [rightScore, setRightScore] = useState(0);
+
+  const incrementLeft = () => setLeftScore(prev => prev + 1);
+  const decrementLeft = () => setLeftScore(prev => Math.max(0, prev - 1));
+
+  const incrementRight = () => setRightScore(prev => prev + 1);
+  const decrementRight = () => setRightScore(prev => Math.max(0, prev - 1));
+
   return (
     <CounterWrapper>
-      <CounterTeamLeft>
-        <CounterNumber>
-          0
-        </CounterNumber>
-      </CounterTeamLeft>
-      <CounterTeamRight>
-        <CounterNumber>
-          1
-        </CounterNumber>
-      </CounterTeamRight>
-    </CounterWrapper>
+    <CounterTeamLeft onClick={incrementLeft} onContextMenu={(e) => { e.preventDefault(); decrementLeft(); }}>
+      <CounterNumber>{leftScore}</CounterNumber>
+    </CounterTeamLeft>
+    <CounterTeamRight onClick={incrementRight} onContextMenu={(e) => { e.preventDefault(); decrementRight(); }}>
+      <CounterNumber>{rightScore}</CounterNumber>
+    </CounterTeamRight>
+  </CounterWrapper>
   )
 }
 
