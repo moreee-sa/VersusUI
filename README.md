@@ -64,6 +64,7 @@ Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard
 ## ⚙️ Control the Score
 - To **increase the score**, **left-click** on the score counter.
 - To **decrease the score**, **right-click** on the score counter.
+- You can now also scroll up to increase and scroll down to decrease the score using the mouse wheel.
 
 
 ## 🎨 Select Color Palette

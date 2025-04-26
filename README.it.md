@@ -57,6 +57,7 @@ Passa rapidamente tra 4 temi colore integrati usando i tasti da 1 a 4 sulla tast
 ## ⚙️ Controlla il Punteggio
 - Per **aumentare il punteggio**, fai **clic sinistro** sul contatore.
 - Per **diminuire il punteggio**, fai **clic destro** sul contatore.
+- Ora puoi anche scorrere verso l'alto con la rotella del mouse per aumentare e scorrere verso il basso per diminuire il punteggio.
 
 ## 🎨 Seleziona una Palette di Colori
 - Puoi **selezionare una palette di colori** premendo i tasti **da 1 a 4** sulla tastiera.
