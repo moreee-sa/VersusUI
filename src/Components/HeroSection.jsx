@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
+import { CiLocationArrow1 } from "react-icons/ci";
 import '@fontsource-variable/montserrat';
-import DemoImage from '../assets/VersusUI-overview.png';
 import { Link } from 'react-router';
 const mobileBreakpoint = '767px'
 
@@ -76,6 +76,28 @@ const ImageSection = styled.div`
   }
 `;
 
+const OverlaySection = styled.div`
+  margin-top: 25px;
+  opacity: 0;
+  animation: ${fadeIn} 1s ease-out 600ms forwards;
+`;
+
+const ButtonOverlay = styled.div`
+  border-radius: 16px;
+  height: 42px;
+  background-color: #E2E2B6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #161c29;
+  font-family: 'Montserrat Variable', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+`;
+
 function HeroSection() {
   return (
     <MainContent>
@@ -87,11 +109,14 @@ function HeroSection() {
           A <strong>Real-time</strong> score overlay for friendly 1vs1 and team face-offs.
         </SubtitleText>
       </SubtitleSection>
-      <ImageSection>
-        <Link to={"/overlay"}>
-          <img src={DemoImage} alt="DemoImage" style={{ objectFit: "cover", width: "100%", height: "100%"}} />
+      <OverlaySection>
+        <Link to={"/overlay"} style={{ textDecoration: "none" }}>
+          <ButtonOverlay>
+            <CiLocationArrow1 />
+            Start Overlay
+          </ButtonOverlay>
         </Link>
-      </ImageSection>
+      </OverlaySection>
     </MainContent>
   )
 }
