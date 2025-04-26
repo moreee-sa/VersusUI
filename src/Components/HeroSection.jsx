@@ -24,6 +24,7 @@ const MainContent = styled.div`
   padding: 80px;
 
   @media (max-width: ${mobileBreakpoint}) {
+    align-items: flex-start;
     padding: 20px;
   }
 `;
@@ -35,6 +36,10 @@ const HeadlineText = styled.span`
   font-size: 100px;
   opacity: 0;
   animation: ${fadeIn} 1.5s ease-out forwards;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 60px;
+  }
 `;
 
 const SubtitleSection = styled.div`
@@ -44,6 +49,10 @@ const SubtitleSection = styled.div`
   opacity: 0;
   animation: ${fadeIn} 1s ease-out 300ms forwards;
   text-align: center;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    text-align: left;
+  }
 `;
 
 const SubtitleText = styled.span`
@@ -51,12 +60,20 @@ const SubtitleText = styled.span`
   font-family: 'Montserrat Variable', sans-serif;
   font-weight: 200;
   font-size: 20px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 18px;
+  }
 `;
 
 const ImageSection = styled.div`
   margin-top: 50px;
   opacity: 0;
   animation: ${fadeIn} 1s ease-out 600ms forwards;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    margin-top: 80px;
+  }
 `;
 
 function HeroSection() {

@@ -12,6 +12,7 @@ const NavigationBar = styled.div`
 
   @media (max-width: ${mobileBreakpoint}) {
     padding: 0;
+    height: auto;
   }
 `;
 
@@ -25,6 +26,10 @@ const AppName = styled.span`
   font-family: 'Montserrat Variable', sans-serif;
   font-weight: 500;
   font-size: 25px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 20px;
+  }
 `;
 
 const Social = styled.div`
