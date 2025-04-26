@@ -20,6 +20,7 @@ const MainContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   padding: 80px;
 
@@ -66,18 +67,8 @@ const SubtitleText = styled.span`
   }
 `;
 
-const ImageSection = styled.div`
-  margin-top: 50px;
-  opacity: 0;
-  animation: ${fadeIn} 1s ease-out 600ms forwards;
-
-  @media (max-width: ${mobileBreakpoint}) {
-    margin-top: 80px;
-  }
-`;
-
 const OverlaySection = styled.div`
-  margin-top: 25px;
+  margin-top: 50px;
   opacity: 0;
   animation: ${fadeIn} 1s ease-out 600ms forwards;
 `;
@@ -96,6 +87,12 @@ const ButtonOverlay = styled.div`
   font-family: 'Montserrat Variable', sans-serif;
   font-weight: 500;
   font-size: 15px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #d8d8ba;
+    box-shadow: 0px 0px 55px 5px #E2E2B6;
+  }
 `;
 
 function HeroSection() {
