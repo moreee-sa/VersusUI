@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import '@fontsource-variable/montserrat';
 import DemoImage from '../assets/VersusUI-overview.png';
+import { Link } from 'react-router';
 
 const fadeIn = keyframes`
   0% {
@@ -65,7 +66,9 @@ function HeroSection() {
         </SubtitleText>
       </SubtitleSection>
       <ImageSection>
-        <img src={DemoImage} alt="DemoImage" />
+        <Link to={"/overlay"}>
+          <img src={DemoImage} alt="DemoImage" />
+        </Link>
       </ImageSection>
     </MainContent>
   )
