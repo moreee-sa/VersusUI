@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import '@fontsource-variable/montserrat';
 import DemoImage from '../assets/VersusUI-overview.png';
 import { Link } from 'react-router';
+const mobileBreakpoint = '767px'
 
 const fadeIn = keyframes`
   0% {
@@ -21,6 +22,10 @@ const MainContent = styled.div`
   align-items: center;
   box-sizing: border-box;
   padding: 80px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 20px;
+  }
 `;
 
 const HeadlineText = styled.span`
@@ -67,7 +72,7 @@ function HeroSection() {
       </SubtitleSection>
       <ImageSection>
         <Link to={"/overlay"}>
-          <img src={DemoImage} alt="DemoImage" />
+          <img src={DemoImage} alt="DemoImage" style={{ objectFit: "cover", width: "100%", height: "100%"}} />
         </Link>
       </ImageSection>
     </MainContent>

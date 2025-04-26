@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import '@fontsource-variable/montserrat';
 import { FaGithub } from "react-icons/fa";
+const mobileBreakpoint = '767px'
 
 const NavigationBar = styled.div`
   height: 100px;
@@ -8,6 +9,10 @@ const NavigationBar = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 0;
+  }
 `;
 
 const AppNameWrapper = styled.div`
