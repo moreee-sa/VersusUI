@@ -15,8 +15,17 @@ const fadeIn = keyframes`
   }
 `;
 
+const fadeInOpacity = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 const MainContent = styled.div`
-  height: 80vh;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,6 +104,16 @@ const ButtonOverlay = styled.div`
   }
 `;
 
+const GuideSectionLink = styled.div`
+  margin-top: 20px;
+  color: #C0C0C0;
+  font-family: 'Montserrat Variable', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0;
+  animation: ${fadeIn} 1s ease-out 600ms forwards;
+`;
+
 function HeroSection() {
   return (
     <MainContent>
@@ -114,6 +133,11 @@ function HeroSection() {
           </ButtonOverlay>
         </Link>
       </OverlaySection>
+      <GuideSectionLink>
+        <Link to={"/setup"} style={{ color: "inherit" }}>
+          Need help? Check the guide! (Soon)
+        </Link>
+      </GuideSectionLink>
     </MainContent>
   )
 }

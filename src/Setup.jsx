@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import Navbar from './Components/Navbar';
-import HeroSection from './Components/HeroSection';
+import '@fontsource-variable/montserrat';
+import { FaClock } from "react-icons/fa";
 
-const Homepage = styled.div`
+const SetupHome = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -18,17 +19,28 @@ const Homepage = styled.div`
   }
 `;
 
-const HowTo = styled.div`
-  height: 100vh;
+const ComingSoon = styled.div`
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: 'Montserrat Variable', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
 `;
 
-function Home() {
+function Setup() {
   return (
-    <Homepage>
+    <SetupHome>
       <Navbar />
-      <HeroSection />
-    </Homepage>
+      <ComingSoon>
+        <FaClock />
+        Coming soon
+      </ComingSoon>
+    </SetupHome>
   )
 }
 
-export default Home
+export default Setup

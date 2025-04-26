@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route } from 'react-router'
 import './index.css'
 import Home from './Home.jsx'
 import App from './App.jsx'
+import Setup from './Setup.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/overlay' element={<App />} />
+        <Route path='/setup' element={<Setup />} />
       </Routes>
     </HashRouter>
   </StrictMode>
