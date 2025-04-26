@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import '@fontsource-variable/montserrat';
 import { FaGithub } from "react-icons/fa";
+import { Link } from 'react-router';
 const mobileBreakpoint = '767px'
 
 const NavigationBar = styled.div`
@@ -51,6 +52,12 @@ const ButtonGithub = styled.div`
   font-family: 'Montserrat Variable', sans-serif;
   font-weight: 500;
   font-size: 15px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #000000;
+    color: white;
+  }
 `;
 
 function Navbar() {
@@ -58,14 +65,16 @@ function Navbar() {
     <NavigationBar>
       <AppNameWrapper>
         <AppName>
-          VersusUI
+          <Link to={"/"} style={{ color: "inherit", textDecoration: "none" }}>
+            VersusUI
+          </Link>
         </AppName>
       </AppNameWrapper>
       <Social>
         <a href="https://github.com/moreee-sa/VersusUI" style={{ textDecoration: "none" }} >
           <ButtonGithub>
             <FaGithub />
-            Star us
+            Support me
           </ButtonGithub>
         </a>
       </Social>

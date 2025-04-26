@@ -91,7 +91,7 @@ const ButtonOverlay = styled.div`
 
   &:hover {
     background-color: #d8d8ba;
-    box-shadow: 0px 0px 55px 5px #E2E2B6;
+    box-shadow: 0px 0px 35px 5px #E2E2B6;
   }
 `;
 
