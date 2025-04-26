@@ -1,3 +1,5 @@
+import './i18n';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import Navbar from './Components/Navbar';
 import '@fontsource-variable/montserrat';
@@ -32,12 +34,14 @@ const ComingSoon = styled.div`
 `;
 
 function Setup() {
+  const { t } = useTranslation();
+
   return (
     <SetupHome>
       <Navbar />
       <ComingSoon>
         <FaClock />
-        Coming soon
+        {t('comingSoon')}
       </ComingSoon>
     </SetupHome>
   )

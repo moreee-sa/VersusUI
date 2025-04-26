@@ -1,3 +1,5 @@
+import '../i18n';
+import { useTranslation } from 'react-i18next';
 import styled, { keyframes } from 'styled-components';
 import { CiLocationArrow1 } from "react-icons/ci";
 import '@fontsource-variable/montserrat';
@@ -115,6 +117,8 @@ const GuideSectionLink = styled.div`
 `;
 
 function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <MainContent>
       <HeadlineText>
@@ -122,20 +126,20 @@ function HeroSection() {
       </HeadlineText>
       <SubtitleSection>
         <SubtitleText>
-          A <strong>Real-time</strong> score overlay for friendly 1vs1 and team face-offs.
+          {t('realTimeScore')}
         </SubtitleText>
       </SubtitleSection>
       <OverlaySection>
         <Link to={"/overlay"} style={{ textDecoration: "none" }}>
           <ButtonOverlay>
             <CiLocationArrow1 />
-            Start Overlay
+            {t('startOverlay')}
           </ButtonOverlay>
         </Link>
       </OverlaySection>
       <GuideSectionLink>
         <Link to={"/setup"} style={{ color: "inherit" }}>
-          Need help? Check the guide! (Soon)
+          {t('helpGuide')}
         </Link>
       </GuideSectionLink>
     </MainContent>
