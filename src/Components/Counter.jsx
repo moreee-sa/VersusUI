@@ -52,15 +52,31 @@ function Counter() {
   const incrementRight = () => setRightScore(prev => prev + 1);
   const decrementRight = () => setRightScore(prev => Math.max(0, prev - 1));
 
+  const handleWheelLeft = (e) => {
+    if (e.deltaY < 0) {
+      incrementLeft();
+    } else {
+      decrementLeft();
+    }
+  };
+
+  const handleWheelRight = (e) => {
+    if (e.deltaY < 0) {
+      incrementRight();
+    } else {
+      decrementRight();
+    }
+  };
+
   return (
     <CounterWrapper>
-    <CounterTeamLeft onClick={incrementLeft} onContextMenu={(e) => { e.preventDefault(); decrementLeft(); }}>
-      <CounterNumber>{leftScore}</CounterNumber>
-    </CounterTeamLeft>
-    <CounterTeamRight onClick={incrementRight} onContextMenu={(e) => { e.preventDefault(); decrementRight(); }}>
-      <CounterNumber>{rightScore}</CounterNumber>
-    </CounterTeamRight>
-  </CounterWrapper>
+      <CounterTeamLeft onWheel={handleWheelLeft} onClick={incrementLeft} onContextMenu={(e) => { e.preventDefault(); decrementLeft(); }}>
+        <CounterNumber>{leftScore}</CounterNumber>
+      </CounterTeamLeft>
+      <CounterTeamRight onWheel={handleWheelRight} onClick={incrementRight} onContextMenu={(e) => { e.preventDefault(); decrementRight(); }}>
+        <CounterNumber>{rightScore}</CounterNumber>
+      </CounterTeamRight>
+    </CounterWrapper>
   )
 }
 
