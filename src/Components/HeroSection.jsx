@@ -79,7 +79,7 @@ const SubtitleText = styled.span`
 `;
 
 const OverlaySection = styled.div`
-  margin-top: 50px;
+  margin-top: 65px;
   opacity: 0;
   animation: ${fadeIn} 1s ease-out 600ms forwards;
 `;
