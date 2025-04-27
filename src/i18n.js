@@ -15,7 +15,7 @@ i18n
       "it": {
         "translation": {
           "realTimeScore": "Una sovrapposizione di punteggio in tempo reale per sfide amichevoli 1vs1 e scontri a squadre.",
-          "startOverlay": "Avvia sovrapposizione",
+          "startOverlay": "Apri sovrapposizione",
           "helpGuide": "Hai bisogno di aiuto? Consulta la guida! (Presto)",
           "comingSoon": "In arrivo",
           "guide": {
@@ -33,7 +33,7 @@ i18n
       "en": {
         "translation": {
           "realTimeScore": "A Real-time score overlay for friendly 1vs1 and team face-offs.",
-          "startOverlay": "Start Overlay",
+          "startOverlay": "Open Overlay",
           "helpGuide": "Need help? Check the guide! (Soon)",
           "comingSoon": "Coming soon",
           "guide": {
