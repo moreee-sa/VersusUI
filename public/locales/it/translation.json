@@ -1,0 +1,16 @@
+{
+  "realTimeScore": "Una sovrapposizione di punteggio in tempo reale per sfide amichevoli 1vs1 e scontri a squadre.",
+  "startOverlay": "Apri sovrapposizione",
+  "helpGuide": "Hai bisogno di aiuto? Consulta la guida! (Presto)",
+  "comingSoon": "In arrivo",
+  "guide": {
+    "introduction": {
+      "title": "Introduzione",
+      "content": "Benvenuto nella guida introduttiva! Qui troverai tutte le informazioni base per cominciare."
+    },
+    "setup": {
+      "title": "Setup per OBS",
+      "content": "Questa guida ti aiuterà a configurare OBS per il miglior utilizzo del nostro overlay."
+    }
+  }
+}
