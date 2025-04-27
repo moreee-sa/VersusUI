@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import Team from './Components/Team';
 import Counter from './Components/Counter';
+import './index.css'
 
 const PageWrapper = styled.div`
   width: 100%;

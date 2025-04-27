@@ -1,7 +1,8 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
-import './home.css'
+import './home.css';
 
 const Homepage = styled.div`
   width: 100%;
@@ -10,11 +11,15 @@ const Homepage = styled.div`
   flex-direction: column;
 `;
 
-const HowTo = styled.div`
-  height: 100vh;
-`;
-
 function Home() {
+  useEffect(() => {
+    document.body.classList.add('home-page');
+
+    return () => {
+      document.body.classList.remove('home-page');
+    };
+  }, []);
+  
   return (
     <Homepage>
       <Navbar />

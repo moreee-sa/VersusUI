@@ -1,4 +1,4 @@
-body {
+body.home-page {
   background: linear-gradient(270deg, #1A120B, #3C2A21, #D5CEA3);
   background-size: 600% 600%;
   animation: GradientAnimation 20s ease infinite;
