@@ -1,0 +1,16 @@
+{
+  "realTimeScore": "A Real-time score overlay for friendly 1vs1 and team face-offs.",
+  "startOverlay": "Open Overlay",
+  "helpGuide": "Need help? Check the guide! (Soon)",
+  "comingSoon": "Coming soon",
+  "guide": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Welcome to the introduction guide! Here you'll find all the basic information to get started."
+    },
+    "setup": {
+      "title": "Setup for OBS",
+      "content": "This guide will help you set up OBS for the best use of our overlay."
+    }
+  }
+}
