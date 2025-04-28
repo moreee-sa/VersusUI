@@ -12,8 +12,8 @@
       "content": "To properly set up OBS with our overlay, add a new source of type <strong>Browser</strong>. <br />Open the overlay, copy the VersusUI URL (https://moreee-sa.github.io/VersusUI/#/overlay) and paste it into the URL field of the Browser source you created. <br />Set the resolution to 1280x200 pixels to perfectly fit the overlay layout.<br />To interact with the overlay, for example to write the team names, right-click on the Browser source in OBS and select <strong>Interact</strong>: a window will open where you can type or click as needed."
     },
     "controlScore": {
-      "title": "Control the Score",
-      "content": "To <strong>increase the score</strong>, <strong>left-click</strong> on the counter. <br />To <strong>decrease the score</strong>, <strong>right-click</strong> on the counter. <br />You can also <strong>scroll up</strong> with the mouse wheel to increase and <strong>scroll down</strong> to decrease the score."
+      "title": "Manage Score",
+      "content": "To <strong>increase the score</strong>, <strong>left-click</strong> on the counter. <br />To <strong>decrease it</strong>, <strong>right-click</strong> on the counter. <br />Alternatively, you can <strong>scroll up</strong> with the mouse wheel to increase the score, and <strong>scroll down</strong> to decrease it."
     },
     "selectPalette": {
       "title": "Select a Color Palette",
