@@ -9,7 +9,7 @@
     },
     "setup": {
       "title": "Setup for OBS",
-      "content": "To properly configure OBS with our overlay, add a new source of type <strong>Browser</strong>. <br />Copy the URL of VersusUI (https://moreee-sa.github.io/VersusUI/#/overlay) and paste it into the URL field of the Browser source you created. <br />Set the resolution to 1280x200 pixels to perfectly fit the overlay layout.<br />To interact with the overlay, for example to write the team names, right-click on the Browser source in OBS and select <strong>Interact</strong>: a window will open where you can type or click as needed."
+      "content": "To properly set up OBS with our overlay, add a new source of type <strong>Browser</strong>. <br />Open the overlay, copy the VersusUI URL (https://moreee-sa.github.io/VersusUI/#/overlay) and paste it into the URL field of the Browser source you created. <br />Set the resolution to 1280x200 pixels to perfectly fit the overlay layout.<br />To interact with the overlay, for example to write the team names, right-click on the Browser source in OBS and select <strong>Interact</strong>: a window will open where you can type or click as needed."
     },
     "controlScore": {
       "title": "Control the Score",
