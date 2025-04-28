@@ -1,7 +1,7 @@
 {
   "realTimeScore": "Una sovrapposizione di punteggio in tempo reale per sfide amichevoli 1vs1 e scontri a squadre.",
   "startOverlay": "Apri sovrapposizione",
-  "helpGuide": "Hai bisogno di aiuto? Consulta la guida! (Presto)",
+  "helpGuide": "Hai bisogno di aiuto? Consulta la guida!",
   "guide": {
     "introduction": {
       "title": "Introduzione",
@@ -10,6 +10,18 @@
     "setup": {
       "title": "Setup per OBS",
       "content": "Per configurare correttamente OBS con il nostro overlay, aggiungi una nuova sorgente di tipo <strong>Browser</strong>. <br />Copia l'URL di VersusUI (https://moreee-sa.github.io/VersusUI/#/overlay) e incollalo nel campo URL della sorgente Browser che hai creato. <br />Imposta la risoluzione su 1280x200 pixel per adattarla perfettamente al layout dell'overlay.<br />Per interagire con l'overlay, ad esempio per scrivere i nomi delle squadre, fai clic destro sulla sorgente Browser in OBS e seleziona <strong>Interagisci</strong>: si aprirà una finestra in cui potrai scrivere o cliccare come necessario."
+    },
+    "controlScore": {
+      "title": "Controlla il Punteggio",
+      "content": "Per <strong>aumentare il punteggio</strong>, fai <strong>clic sinistro</strong> sul contatore. <br />Per <strong>diminuire il punteggio</strong>, fai <strong>clic destro</strong> sul contatore. <br />Ora puoi anche <strong>scorrere verso l'alto</strong> con la rotella del mouse per aumentare e <strong>scorrere verso il basso</strong> per diminuire il punteggio."
+    },
+    "selectPalette": {
+      "title": "Seleziona una Palette di Colori",
+      "content": "Puoi <strong>selezionare una palette di colori</strong> premendo i tasti <strong>da 1 a 4</strong> sulla tastiera. <br />Premi <strong>0</strong> per tornare alla <strong>palette predefinita</strong>."
+    },
+    "editNames": {
+      "title": "Modifica Nomi Squadre/Giocatori",
+      "content": "<strong>Clicca sul nome della squadra</strong> direttamente nell'overlay. <br />Puoi <strong>scrivere il nome della squadra o del giocatore</strong>, con un massimo di <strong>30 caratteri</strong>."
     }
   }
 }

@@ -128,7 +128,7 @@ const DocsTitle = styled.span`
   text-transform: uppercase;
 
   @media (max-width: ${desktopBreakpoint}) {
-    font-size: 30px;
+    display: none;
   }
 `;
 
@@ -137,6 +137,9 @@ const DocsParagraph = styled.span`
   font-family: 'Montserrat Variable', sans-serif;
   font-weight: 400;
   font-size: 15px;
+
+  @media (max-width: ${desktopBreakpoint}) {
+    font-size: 18px;  }
 `;
 
 function Setup() {
@@ -150,6 +153,9 @@ function Setup() {
   const guidesList = [
     { value: 'Introduction', title: t('guide.introduction.title'), content: t('guide.introduction.content') },
     { value: 'Setup', title: t('guide.setup.title'), content: t('guide.setup.content') },
+    { value: "Control Score", title: t('guide.controlScore.title'), content: t('guide.controlScore.content') },
+    { value: "Select Palette", title: t('guide.selectPalette.title'), content: t('guide.selectPalette.content') },
+    { value: "Edit Names", title: t('guide.editNames.title'), content: t('guide.editNames.content') },
   ];  
 
   return (
