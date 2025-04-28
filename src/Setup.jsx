@@ -1,6 +1,6 @@
 import './i18n';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import Navbar from './Components/Navbar';
 import '@fontsource-variable/montserrat';
@@ -183,7 +183,9 @@ function Setup() {
             selectedGuide === guide.value && (
               <DocsArticle key={guide.value}>
                 <DocsTitle>{guide.title}</DocsTitle>
-                <DocsParagraph>{guide.content}</DocsParagraph>
+                <DocsParagraph>
+                  <Trans i18nKey={guide.content} />
+                </DocsParagraph>
               </DocsArticle>
             )
           ))}
