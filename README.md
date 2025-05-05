@@ -28,7 +28,6 @@
   - [⚙️ Control the Score](#️-control-the-score)
   - [🎨 Select Color Palette](#-select-color-palette)
   - [🖥️ How to Use for OBS](#️-how-to-use-for-obs)
-  - [🚀 Coming Soon](#-coming-soon)
 
 ## ✨ Features
 - 📺 Clean and responsive UI for OBS or any streaming software
@@ -65,6 +64,11 @@ Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard
 - To **increase the score**, **left-click** on the score counter.
 - To **decrease the score**, **right-click** on the score counter.
 - You can now also scroll up to increase and scroll down to decrease the score using the mouse wheel.
+- Keyboard shortcuts to control the score:
+  - Q to decrease the left team's score.
+  - E to increase the left team's score.
+  - A to decrease the right team's score.
+  - D to increase the right team's score.
 
 
 ## 🎨 Select Color Palette
@@ -79,10 +83,6 @@ Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard
 4. **Paste the URL** you copied into the URL field of the Browser Source.
 5. **Set the resolution** of the source to **1280x200px** to fit the layout properly.
 6. To interact with the overlay (e.g., type team names), right-click the Browser Source in OBS and select **"Interact"**. This opens an interactive window where you can type or click as needed. 🖱️⌨️
-
-
-## 🚀 Coming Soon
-- Keyboard shortcuts for score control
 
 ---
 

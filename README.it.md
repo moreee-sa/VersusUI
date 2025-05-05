@@ -26,7 +26,6 @@
   - [⚙️ Controlla il Punteggio](#️-controlla-il-punteggio)
   - [🎨 Seleziona una Palette di Colori](#-seleziona-una-palette-di-colori)
   - [🖥️ Uso con OBS](#️-uso-con-obs)
-  - [🚀 In Arrivo](#-in-arrivo)
 
 ## ✨ Caratteristiche
 - 📺 UI pulita e reattiva per OBS o qualsiasi software di streaming
@@ -58,6 +57,11 @@ Passa rapidamente tra 4 temi colore integrati usando i tasti da 1 a 4 sulla tast
 - Per **aumentare il punteggio**, fai **clic sinistro** sul contatore.
 - Per **diminuire il punteggio**, fai **clic destro** sul contatore.
 - Ora puoi anche scorrere verso l'alto con la rotella del mouse per aumentare e scorrere verso il basso per diminuire il punteggio.
+- Tasti da tastiera per controllare i punteggi:
+  - Q per diminuire il punteggio della squadra sinistra.
+  -  per aumentare il punteggio della squadra sinistra.
+  -  A per diminuire il punteggio della squadra destra.
+  -  D per aumentare il punteggio della squadra destra.
 
 ## 🎨 Seleziona una Palette di Colori
 - Puoi **selezionare una palette di colori** premendo i tasti **da 1 a 4** sulla tastiera.
@@ -70,9 +74,6 @@ Passa rapidamente tra 4 temi colore integrati usando i tasti da 1 a 4 sulla tast
 4. **Incolla l’URL** copiato nel campo URL della sorgente Browser.
 5. **Imposta la risoluzione** della sorgente su **1280x200px** per adattarla correttamente al layout.
 6. Per interagire con l’overlay (es. scrivere nomi delle squadre), fai clic destro sulla sorgente Browser in OBS e seleziona **"Interagisci"**. Questo aprirà una finestra interattiva dove puoi scrivere o cliccare come necessario. 🖱️⌨️
-
-## 🚀 In Arrivo
-- Scorciatoie da tastiera per controllare il punteggio
 
 ---
 

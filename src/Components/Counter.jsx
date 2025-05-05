@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components"
 import '@fontsource-variable/montserrat';
 
@@ -67,6 +67,34 @@ function Counter() {
       decrementRight();
     }
   };
+
+  const handleKeyPress = (e) => {
+    if (document.activeElement.tagName === "INPUT") {
+      return;
+    }
+
+    if (e.key === 'q' || e.key === 'e' || e.key === 'a' || e.key === 'd') {
+      e.preventDefault();
+
+      if (e.key === 'q') {
+        decrementLeft();
+      } else if (e.key === 'e') {
+        incrementLeft();
+      } else if (e.key === 'a') {
+        decrementRight();
+      } else if (e.key === 'd') {
+        incrementRight();
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
 
   return (
     <CounterWrapper>
