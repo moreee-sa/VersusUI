@@ -1,8 +1,7 @@
 {
   "realTimeScore": "A Real-time score overlay for friendly 1vs1 and team face-offs.",
   "startOverlay": "Open Overlay",
-  "helpGuide": "Need help? Check the guide! (Soon)",
-  "comingSoon": "Coming soon",
+  "helpGuide": "Need help? Check the guide!",
   "guide": {
     "introduction": {
       "title": "Introduction",
@@ -10,7 +9,19 @@
     },
     "setup": {
       "title": "Setup for OBS",
-      "content": "This guide will help you set up OBS for the best use of our overlay."
+      "content": "To properly set up OBS with our overlay, add a new source of type <strong>Browser</strong>. <br />Open the overlay, copy the VersusUI URL (https://moreee-sa.github.io/VersusUI/#/overlay) and paste it into the URL field of the Browser source you created. <br />Set the resolution to 1280x200 pixels to perfectly fit the overlay layout.<br />To interact with the overlay, for example to write the team names, right-click on the Browser source in OBS and select <strong>Interact</strong>: a window will open where you can type or click as needed."
+    },
+    "controlScore": {
+      "title": "Manage Score",
+      "content": "To <strong>increase the score</strong>, <strong>left-click</strong> on the counter. <br />To <strong>decrease it</strong>, <strong>right-click</strong> on the counter. <br />Alternatively, you can <strong>scroll up</strong> with the mouse wheel to increase the score, and <strong>scroll down</strong> to decrease it. <br />Use the following <strong>keyboard shortcuts</strong>: <br /> <strong>Q</strong> to decrease the left team's score, <strong>E</strong> to increase the left team's score, <strong>A</strong> to decrease the right team's score, and <strong>D</strong> to increase the right team's score."
+    },
+    "selectPalette": {
+      "title": "Select a Color Palette",
+      "content": "You can <strong>select a color palette</strong> by pressing the keys <strong>1 to 4</strong> on the keyboard. <br />Press <strong>0</strong> to return to the <strong>default palette</strong>."
+    },
+    "editNames": {
+      "title": "Edit Team/Player Names",
+      "content": "<strong>Click on the team name</strong> directly in the overlay. <br />You can <strong>write the name of the team or player</strong>, with a maximum of <strong>30 characters</strong>."
     }
   }
 }

@@ -1,8 +1,7 @@
 {
   "realTimeScore": "Una sovrapposizione di punteggio in tempo reale per sfide amichevoli 1vs1 e scontri a squadre.",
   "startOverlay": "Apri sovrapposizione",
-  "helpGuide": "Hai bisogno di aiuto? Consulta la guida! (Presto)",
-  "comingSoon": "In arrivo",
+  "helpGuide": "Hai bisogno di aiuto? Consulta la guida!",
   "guide": {
     "introduction": {
       "title": "Introduzione",
@@ -10,7 +9,19 @@
     },
     "setup": {
       "title": "Setup per OBS",
-      "content": "Questa guida ti aiuterà a configurare OBS per il miglior utilizzo del nostro overlay."
+      "content": "Per configurare correttamente OBS con il nostro overlay, aggiungi una nuova sorgente di tipo <strong>Browser</strong>. <br />Apri la sovrapposizione, copia l'URL di VersusUI (https://moreee-sa.github.io/VersusUI/#/overlay) e incollalo nel campo URL della sorgente Browser che hai creato. <br />Imposta la risoluzione su 1280x200 pixel per adattarla perfettamente al layout dell'overlay.<br />Per interagire con l'overlay, ad esempio per scrivere i nomi delle squadre, fai clic destro sulla sorgente Browser in OBS e seleziona <strong>Interagisci</strong>: si aprirà una finestra in cui potrai scrivere o cliccare come necessario."
+    },
+    "controlScore": {
+      "title": "Gestisci il Punteggio",
+      "content": "Per <strong>aumentare il punteggio</strong>, fai <strong>clic sinistro</strong> sul contatore. <br />Per <strong>diminuirlo</strong>, fai <strong>clic destro</strong> sul contatore. <br />In alternativa, puoi <strong>scorrere verso l'alto</strong> con la rotella del mouse per incrementare il punteggio, e <strong>scorrere verso il basso</strong> per ridurlo. <br />Usa le seguenti <strong>scorciatoie da tastiera</strong>: <br /> <strong>Q</strong> per diminuire il punteggio della squadra sinistra, <strong>E</strong> per aumentare il punteggio della squadra sinistra, <strong>A</strong> per diminuire il punteggio della squadra destra, e <strong>D</strong> per aumentare il punteggio della squadra destra."
+    },
+    "selectPalette": {
+      "title": "Seleziona una Palette di Colori",
+      "content": "Puoi <strong>selezionare una palette di colori</strong> premendo i tasti <strong>da 1 a 4</strong> sulla tastiera. <br />Premi <strong>0</strong> per tornare alla <strong>palette predefinita</strong>."
+    },
+    "editNames": {
+      "title": "Modifica Nomi Squadre/Giocatori",
+      "content": "<strong>Clicca sul nome della squadra</strong> direttamente nell'overlay. <br />Puoi <strong>scrivere il nome della squadra o del giocatore</strong>, con un massimo di <strong>30 caratteri</strong>."
     }
   }
 }
