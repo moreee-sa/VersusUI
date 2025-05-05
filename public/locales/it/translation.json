@@ -13,7 +13,7 @@
     },
     "controlScore": {
       "title": "Gestisci il Punteggio",
-      "content": "Per <strong>aumentare il punteggio</strong>, fai <strong>clic sinistro</strong> sul contatore. <br />Per <strong>diminuirlo</strong>, fai <strong>clic destro</strong> sul contatore. <br />In alternativa, puoi <strong>scorrere verso l'alto</strong> con la rotella del mouse per incrementare il punteggio, e <strong>scorrere verso il basso</strong> per ridurlo."
+      "content": "Per <strong>aumentare il punteggio</strong>, fai <strong>clic sinistro</strong> sul contatore. <br />Per <strong>diminuirlo</strong>, fai <strong>clic destro</strong> sul contatore. <br />In alternativa, puoi <strong>scorrere verso l'alto</strong> con la rotella del mouse per incrementare il punteggio, e <strong>scorrere verso il basso</strong> per ridurlo. <br />Usa le seguenti <strong>scorciatoie da tastiera</strong>: <br /> <strong>Q</strong> per diminuire il punteggio della squadra sinistra, <strong>E</strong> per aumentare il punteggio della squadra sinistra, <strong>A</strong> per diminuire il punteggio della squadra destra, e <strong>D</strong> per aumentare il punteggio della squadra destra."
     },
     "selectPalette": {
       "title": "Seleziona una Palette di Colori",

@@ -13,7 +13,7 @@
     },
     "controlScore": {
       "title": "Manage Score",
-      "content": "To <strong>increase the score</strong>, <strong>left-click</strong> on the counter. <br />To <strong>decrease it</strong>, <strong>right-click</strong> on the counter. <br />Alternatively, you can <strong>scroll up</strong> with the mouse wheel to increase the score, and <strong>scroll down</strong> to decrease it."
+      "content": "To <strong>increase the score</strong>, <strong>left-click</strong> on the counter. <br />To <strong>decrease it</strong>, <strong>right-click</strong> on the counter. <br />Alternatively, you can <strong>scroll up</strong> with the mouse wheel to increase the score, and <strong>scroll down</strong> to decrease it. <br />Use the following <strong>keyboard shortcuts</strong>: <br /> <strong>Q</strong> to decrease the left team's score, <strong>E</strong> to increase the left team's score, <strong>A</strong> to decrease the right team's score, and <strong>D</strong> to increase the right team's score."
     },
     "selectPalette": {
       "title": "Select a Color Palette",
