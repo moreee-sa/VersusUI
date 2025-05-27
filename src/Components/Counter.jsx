@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import styled from "styled-components"
 import '@fontsource-variable/montserrat';
 
@@ -46,55 +46,45 @@ function Counter() {
   const [leftScore, setLeftScore] = useState(0);
   const [rightScore, setRightScore] = useState(0);
 
-  const incrementLeft = () => setLeftScore(prev => prev + 1);
-  const decrementLeft = () => setLeftScore(prev => Math.max(0, prev - 1));
+  // Memorizza le funzioni di aggiornamento
+  const incrementLeft = useCallback(() => setLeftScore(prev => prev + 1), []);
+  const decrementLeft = useCallback(() => setLeftScore(prev => Math.max(0, prev - 1)), []);
+  const incrementRight = useCallback(() => setRightScore(prev => prev + 1), []);
+  const decrementRight = useCallback(() => setRightScore(prev => Math.max(0, prev - 1)), []);
 
-  const incrementRight = () => setRightScore(prev => prev + 1);
-  const decrementRight = () => setRightScore(prev => Math.max(0, prev - 1));
-
+  // Funzioni per la rotellina e click non cambiano molto, ma puoi anche memoizzarle se vuoi
   const handleWheelLeft = (e) => {
-    if (e.deltaY < 0) {
-      incrementLeft();
-    } else {
-      decrementLeft();
-    }
+    if (e.deltaY < 0) incrementLeft();
+    else decrementLeft();
   };
 
   const handleWheelRight = (e) => {
-    if (e.deltaY < 0) {
-      incrementRight();
-    } else {
-      decrementRight();
-    }
+    if (e.deltaY < 0) incrementRight();
+    else decrementRight();
   };
 
-  const handleKeyPress = (e) => {
+  // Memoizza handleKeyPress con tutte le dipendenze
+  const handleKeyPress = useCallback((e) => {
     if (document.activeElement.tagName === "INPUT") {
       return;
     }
 
-    if (e.key === 'q' || e.key === 'e' || e.key === 'a' || e.key === 'd') {
+    if (['q', 'e', 'a', 'd'].includes(e.key)) {
       e.preventDefault();
 
-      if (e.key === 'q') {
-        decrementLeft();
-      } else if (e.key === 'e') {
-        incrementLeft();
-      } else if (e.key === 'a') {
-        decrementRight();
-      } else if (e.key === 'd') {
-        incrementRight();
-      }
+      if (e.key === 'q') decrementLeft();
+      else if (e.key === 'e') incrementLeft();
+      else if (e.key === 'a') decrementRight();
+      else if (e.key === 'd') incrementRight();
     }
-  };
+  }, [decrementLeft, incrementLeft, decrementRight, incrementRight]);
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress);
-
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
     };
-  }, []);
+  }, [handleKeyPress]);
 
   return (
     <CounterWrapper>

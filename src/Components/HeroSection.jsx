@@ -17,15 +17,6 @@ const fadeIn = keyframes`
   }
 `;
 
-const fadeInOpacity = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
 const MainContent = styled.div`
   flex: 1;
   display: flex;
