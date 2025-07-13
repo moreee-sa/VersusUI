@@ -13,7 +13,7 @@ const SetupHome = styled.div`
   flex-direction: column;
   background: linear-gradient(270deg, #1A120B, #3C2A21, #D5CEA3);
   background-size: 600% 600%;
-  animation: GradientAnimation 20s ease infinite;
+  animation: GradientAnimation 15s linear infinite;
 
   @keyframes GradientAnimation {
     0% { background-position: 0% 50%; }
