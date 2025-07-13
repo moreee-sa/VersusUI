@@ -107,6 +107,14 @@ const GuideSectionLink = styled.div`
   animation: ${fadeIn} 1s ease-out 600ms forwards;
 `;
 
+const HelpGuideText = styled.span`
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: white;
+  }
+`;
+
 function HeroSection() {
   const { t } = useTranslation();
 
@@ -129,8 +137,10 @@ function HeroSection() {
         </Link>
       </OverlaySection>
       <GuideSectionLink>
-        <Link to={"/setup"} style={{ color: "inherit" }}>
-          {t('helpGuide')}
+        <Link to={"/setup"} style={{ color: "inherit", }}>
+          <HelpGuideText>
+            {t('helpGuide')}
+          </HelpGuideText>
         </Link>
       </GuideSectionLink>
     </MainContent>
