@@ -108,7 +108,7 @@ const GuideSectionLink = styled.div`
 `;
 
 const HelpGuideText = styled.span`
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
 
   &:hover {
     color: white;
