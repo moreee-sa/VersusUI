@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import { CiLocationArrow1 } from "react-icons/ci";
 import '@fontsource-variable/montserrat';
 import { Link } from 'react-router';
-const mobileBreakpoint = '767px'
+import { MOBILEBREAKPOINT } from '../lib/constants';
 
 const fadeIn = keyframes`
   0% {
@@ -26,7 +26,7 @@ const MainContent = styled.div`
   box-sizing: border-box;
   padding: 80px;
 
-  @media (max-width: ${mobileBreakpoint}) {
+  @media (max-width: ${MOBILEBREAKPOINT}) {
     align-items: flex-start;
     padding: 20px;
   }
@@ -40,7 +40,7 @@ const HeadlineText = styled.span`
   opacity: 0;
   animation: ${fadeIn} 1.5s ease-out forwards;
 
-  @media (max-width: ${mobileBreakpoint}) {
+  @media (max-width: ${MOBILEBREAKPOINT}) {
     font-size: 60px;
   }
 `;
@@ -53,7 +53,7 @@ const SubtitleSection = styled.div`
   animation: ${fadeIn} 1s ease-out 300ms forwards;
   text-align: center;
 
-  @media (max-width: ${mobileBreakpoint}) {
+  @media (max-width: ${MOBILEBREAKPOINT}) {
     text-align: left;
   }
 `;
@@ -64,7 +64,7 @@ const SubtitleText = styled.span`
   font-weight: 200;
   font-size: 20px;
 
-  @media (max-width: ${mobileBreakpoint}) {
+  @media (max-width: ${MOBILEBREAKPOINT}) {
     font-size: 18px;
   }
 `;

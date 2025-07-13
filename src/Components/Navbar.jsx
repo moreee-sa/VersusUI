@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import '@fontsource-variable/montserrat';
 import { FaGithub } from "react-icons/fa";
 import { Link } from 'react-router';
-const mobileBreakpoint = '767px'
+import { MOBILEBREAKPOINT } from '../lib/constants';
 
 const NavigationBar = styled.div`
   height: 100px;
@@ -11,7 +11,7 @@ const NavigationBar = styled.div`
   align-items: center;
   padding: 0 50px;
 
-  @media (max-width: ${mobileBreakpoint}) {
+  @media (max-width: ${MOBILEBREAKPOINT}) {
     padding: 0;
     height: auto;
   }
@@ -28,7 +28,7 @@ const AppName = styled.span`
   font-weight: 500;
   font-size: 25px;
 
-  @media (max-width: ${mobileBreakpoint}) {
+  @media (max-width: ${MOBILEBREAKPOINT}) {
     font-size: 20px;
   }
 `;

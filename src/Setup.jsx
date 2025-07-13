@@ -4,7 +4,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import Navbar from './Components/Navbar';
 import '@fontsource-variable/montserrat';
-const desktopBreakpoint = '960px'
+import { DESKTOPBREAKPOINT } from './lib/constants';
 
 const SetupHome = styled.div`
   width: 100%;
@@ -25,7 +25,7 @@ const SetupHome = styled.div`
 const ContentWrapper = styled.div`
   display: flex;
 
-  @media (max-width: ${desktopBreakpoint}) {
+  @media (max-width: ${DESKTOPBREAKPOINT}) {
     flex-direction: column;
   }
 `;
@@ -38,7 +38,7 @@ const Sidebar = styled.div`
   gap: 10px;
   padding: 0 20px;
 
-  @media (max-width: ${desktopBreakpoint}) {
+  @media (max-width: ${DESKTOPBREAKPOINT}) {
     display: none;
   }
 `;
@@ -68,7 +68,7 @@ const SidebarButton = styled.button`
 const DocsContent = styled.div`
   flex: 6;
 
-  @media (max-width: ${desktopBreakpoint}) {
+  @media (max-width: ${DESKTOPBREAKPOINT}) {
     flex: auto;
     margin-top: 20px;
   }
@@ -84,7 +84,7 @@ const DropdownBar = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   
-  @media (max-width: ${desktopBreakpoint}) {
+  @media (max-width: ${DESKTOPBREAKPOINT}) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@ const DocsTitle = styled.span`
   font-size: 40px;
   text-transform: uppercase;
 
-  @media (max-width: ${desktopBreakpoint}) {
+  @media (max-width: ${DESKTOPBREAKPOINT}) {
     display: none;
   }
 `;
@@ -138,7 +138,7 @@ const DocsParagraph = styled.span`
   font-weight: 400;
   font-size: 15px;
 
-  @media (max-width: ${desktopBreakpoint}) {
+  @media (max-width: ${DESKTOPBREAKPOINT}) {
     font-size: 18px;  }
 `;
 
