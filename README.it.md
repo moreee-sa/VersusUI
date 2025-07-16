@@ -26,6 +26,7 @@
   - [⚙️ Controlla il Punteggio](#️-controlla-il-punteggio)
   - [🎨 Seleziona una Palette di Colori](#-seleziona-una-palette-di-colori)
   - [🖥️ Uso con OBS](#️-uso-con-obs)
+  - [📄 License](#-license)
 
 ## ✨ Caratteristiche
 - 📺 UI pulita e reattiva per OBS o qualsiasi software di streaming
@@ -78,3 +79,7 @@ Passa rapidamente tra 4 temi colore integrati usando i tasti da 1 a 4 sulla tast
 ---
 
 Rimani aggiornato per le novità!
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).  
+© 2025 moreee-sa

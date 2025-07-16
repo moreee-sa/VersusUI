@@ -28,6 +28,7 @@
   - [⚙️ Control the Score](#️-control-the-score)
   - [🎨 Select Color Palette](#-select-color-palette)
   - [🖥️ How to Use for OBS](#️-how-to-use-for-obs)
+  - [📄 License](#-license)
 
 ## ✨ Features
 - 📺 Clean and responsive UI for OBS or any streaming software
@@ -87,3 +88,7 @@ Quickly switch between 4 built-in color themes using keys 1–4 on your keyboard
 ---
 
 Stay tuned for updates!
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).  
+© 2025 moreee-sa
