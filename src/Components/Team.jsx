@@ -61,7 +61,10 @@ function Team({position, currentColors}) {
       if (currentWidth > maxWidth) {
         newFontSize = Math.max(24, (50 * maxWidth) / currentWidth);
       }
-      setFontSize(newFontSize);
+
+      setFontSize(prev =>
+        prev !== newFontSize ? newFontSize : prev
+      );
     }
   }, [value]);
 
